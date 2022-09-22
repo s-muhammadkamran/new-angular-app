@@ -1,0 +1,26 @@
+<p>{{helloWorld()}}</p>
+<p>{{title}}</p>
+<app-user></app-user>
+<app-inline></app-inline>
+<app-interpolation></app-interpolation>
+
+<h1>There are 3 ways to call a component</h1>
+
+<ul>
+    <li><h3> By using Custom Tags like </h3></li> 
+        <li><pre class="mycode">define selector as <br/> selector: 'app-user'</pre></li>
+        <li><pre class="mycode">&lt;app-user&gt;<br/>&lt;/app-user&gt;</pre></li>
+        
+    <li><h3> By using Class Selector </h3></li> 
+        <li><pre class="mycode">define selector as <br/> selector: '.app-user'</pre></li>
+        <li><pre class="mycode">&lt;div class='.app-user'&gt;<br/>&lt;/div&gt;</pre></li>        
+    <li><h3> By using Attributes </h3></li>
+        <li><pre class="mycode">define selector as <br/> selector: '[app-user]'</pre></li>
+        <li><pre class="mycode">&lt;div app-user&gt;<br/>&lt;/div&gt;</pre></li>
+</ul>
+
+Custom Selector Invocation: <app-selector-types></app-selector-types>
+Class Selector Invocation: <div class="app-selector-types"></div>
+Attribute Selector Invocation: <div app-selector-types></div>
+
+
